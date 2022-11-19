@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and more desgining</title>
+    <style>
+        .container{
+            border : 2px solid red;
+            background-color : rgb(223,245,345);
+            padding: 34px;
+            margin: 34px;
+            width: 600px;
+        }
+
+        a{
+            text-decoration: none;
+            /* underline remove krega "read more" ka  */
+        }
+        a:hover{
+            /* hover kiya to kya hoga uske liye hai  a:hover */
+            background-color: black;
+        }
+        a:visited{
+            color: blue;
+            /* visit kel asel tr kay hoil tyasathi a:visited  */
+        }
+
+        .btn
+        {
+            background-color: red;
+            color: white;
+            padding: 6px;
+
+            /* to hower the mouse on that button */
+            /* cursor : pointer; */
+
+            font-size: 13px;
+            border-radius: 4px;
+        }
+
+        .btn:hover
+        {
+            color:aqua;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="cont1">
+
+        <!-- read more option  -->
+        <h3>this is link</h3>
+        <a href="www.google.com" class="btn"> read more</a>
+
+
+        <h3>this is button</h3>
+        <!-- button of "contact us" -->
+        <button class="btn">  <a href="https://www.w3schools.com/">w3school</a>  </button>
+
+    </div>
+
+</body>
+</html>
+
+

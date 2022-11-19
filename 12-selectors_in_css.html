@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectors</title>
+    <style>
+        body{
+            background-color: khaki;
+        }
+        /* css me cmnt ke liye ye aisa dikhta hai ctrl+/ dabana h */
+        p{
+            /* element selector */
+            color : red;
+        }     
+        /* saglya paragraph cha color red karel jyancha id/class specific mention krun color change nasel kel tyanch */
+
+        #two{
+            /* id selctor */
+            color: green;
+        }
+        #four{
+            /* id */
+            color: yellow;
+        }
+        /* id ne target kelay (id sathi # ahe)*/
+
+        .blueColor{
+            /* class selector */
+            color: blue;
+            background-color: antiquewhite;
+        }
+        /* class ne target kelay (class sathi . ahe) */
+
+        footer,span{
+            /* grouping selector */
+            background-color: red;
+        }
+
+
+        /* heirarrchycal selectors  */
+
+        /* madhe space asel tr te parent child heirarchy ast */
+        div h2 {
+            
+            color: red;
+        }
+        div #taytal{
+            color: blue;
+        }
+
+        /* madhe space nasel tr ekach exact order pahije */
+        h1.container#taytal{
+            color: brown;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- html ka cmnt and css ka cmnt alag h dikhne me  but way same hi h ctrl+/ -->
+    <h3>
+        css selectors
+    </h3>
+    <p id="one">paragraph 1 ahe fkt ani kahi nahi </p><hr>
+
+    <p id="two">paragraph 2 ahe fkt ani kay nahi </p><hr>
+
+    <div>
+        <p id="3rd" class="blueColor"> yaar kuth hotas tu ani mi melyavr yenar hota ka</p>
+    </div><hr>
+
+    <p id="four">paragrpah 4 </p><hr>
+    
+    <footer>this is footer</footer>
+    <span>this is span </span><hr><hr>
+
+
+    <!-- heirarchical selectors -->
+
+    <div>
+        <h2 class="container" id="title">hello worlds !</h2>
+    </div>
+
+    <div class="cont" id="trad">
+        <h2 class="container" id="taytal">second paragraph !</h2>
+    </div>
+
+    <div class="cont" id="tr">
+        <h1 class="container" id="taytal">third paragraph !</h1>
+    </div>
+</body>
+</html>

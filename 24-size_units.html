@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>size units </title>
+    <style>
+        /* em unit */
+        div {
+            font-size: 30px;
+            border: 1px solid black;
+        }
+
+        span {
+            font-size: 0.5em;
+        }
+
+        /* vw unit */
+        h1 {
+            font-size: 20vw;
+        }
+
+        /* vh unit  */
+        h2 {
+            font-size: 20vh;
+        }
+    </style>
+</head>
+<body>
+    <!-- em unit -->
+    <!-- Relative to the font-size of the parent element (2em means 2 times the size of the parent element font) -->
+    <div>The font-size of the div element is set to 30px. <span>The span element inside the div element has a font-size of 0.5em, which equals to 0.5x30 = 15px</span>.</div>
+
+
+    <!-- vw unit -->
+    <!-- Relative to 1% of the width of the viewport* -->
+    <h1>Hello</h1>
+    <p>Resize the width of the browser window to see how the font-size of h1 changes.</p>
+    <p>1vw = 1% of viewport width.</p>
+
+
+    <!-- vh unit  -->
+    <h2>Hello</h2>
+    <p>Resize the height of the browser window to see how the font-size of h2 changes.</p>
+    <p>1vh = 1% of viewport height.</p>
+
+</body>
+</html>

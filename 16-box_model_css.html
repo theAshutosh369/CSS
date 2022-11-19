@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        *{
+            /*  saglya element la property lagu hoil if nantr override nahi kel tr  */
+            border: 3px solid black;
+            margin: 5px;
+            padding: 5px;
+        }  
+
+        .cont1{
+            color: blueviolet;
+            border: 5px solid red;
+
+            /* border chya atli side - padding*/
+            padding: 20px;
+            padding-top: 50px;
+            /* we can add padding in one line for all 4 sides like below  */
+            /* padding: top right bottom left (trouble)(clockwise)
+            padding: 20px 30px 40px 50px ;
+
+            /* border chya baherchi side - margin */
+            margin: 20px;
+            margin-left: 100px;
+            margin: 10px 20px 30px 40px;
+        }
+        .cont2{
+            border: 12px solid blue;
+
+             /* we can add margin in one line for all 4 sides like below  */
+            /* margin: top right bottom left (clockwise) */
+            margin: 20px 30px 40px 30px ;
+        }
+        .cont3{
+            border: 13px solid pink;
+
+            /* we can give padding and margin like this too -
+            margin: y(top/bottom) x(left/right) */
+            margin: 40px 20px;
+            padding: 1px 50px;
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="cont1">
+        <h3>this is my heading 1 </h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quasi autem vitae incidunt blanditiis veritatis! Architecto impedit quasi at soluta natus necessitatibus commodi laborum, quaerat iste illum provident accusantium eos.</p>
+    </div>
+
+    <div class="cont2">
+        <h3>this is my heading 2</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quasi autem vitae incidunt blanditiis veritatis! Architecto impedit quasi at soluta natus necessitatibus commodi laborum, quaerat iste illum provident accusantium eos.</p>
+    </div>
+
+    <div class="cont3">
+        <h3>this is my heading 3</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quasi autem vitae incidunt blanditiis veritatis! Architecto impedit quasi at soluta natus necessitatibus commodi laborum, quaerat iste illum provident accusantium eos.</p>
+    </div>
+    
+</body>
+</html>

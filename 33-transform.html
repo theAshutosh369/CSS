@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        div {
+  width: 300px;
+  height: 100px;
+    margin: 150px;
+  text-align: center;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: translate(50px,100px);
+  transform: rotate(20deg);
+  transform: rotate(-20deg);
+  transform: scale(2, 3);
+  transform: scale(0.5, 0.5);
+  transform: scaleX(2);
+  transform: scaleX(0.5);
+  transform: scaleY(3);
+  transform: scaleY(0.5);
+  transform: skewX(20deg);
+  transform: skewY(20deg);
+  transform: skew(20deg, 10deg);
+
+  /* The matrix() method combines all the 2D transform methods into one.
+
+The matrix() method take six parameters, containing mathematic functions, which allows you to rotate, scale, move (translate), and skew elements.
+
+The parameters are as follow: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+
+
+
+
+}
+
+    </style>
+</head>
+<body>
+    <h1>The translate() Method</h1>
+    <p>The translate() method moves an element from its current position:</p>
+    <div>
+     css box
+    </div>
+</body>
+</html>
